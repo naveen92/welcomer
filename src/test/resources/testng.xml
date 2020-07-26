@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<suite name="Welcome Test Suite">
+   <test name="Welcome message test">
+    <classes>
+      <class name="com.naveen.tests.WelcomeMessageTest" />
+    </classes>
+  </test>
+</suite>
