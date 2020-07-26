@@ -6,4 +6,35 @@
       <class name="com.naveen.tests.WelcomeMessageTest" />
     </classes>
   </test>
+  
+   <test name="Login Endpoint test">
+    <classes>
+      <class name="com.naveen.tests.LoginEndpointTest" />
+    </classes>
+  </test>
+  
+   <test name="Login Page If Incorrect Credentials test">
+    <classes>
+      <class name="com.naveen.tests.LoginPageIfIncorrectCredTest" />
+    </classes>
+  </test>
+  
+   <test name="Login Page If Unauthenticated test">
+    <classes>
+      <class name="com.naveen.tests.LoginPageIfUnauthTest" />
+    </classes>
+  </test>
+  
+   <test name="Logout Endpoint test">
+    <classes>
+      <class name="com.naveen.tests.LogoutEndpointTest" />
+    </classes>
+  </test>
+  
+   <test name="Secure HomePage test">
+    <classes>
+      <class name="com.naveen.tests.SecureHomePageTest" />
+    </classes>
+  </test>
+    
 </suite>
