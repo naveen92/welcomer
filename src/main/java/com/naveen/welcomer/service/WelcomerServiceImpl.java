@@ -4,8 +4,7 @@ public class WelcomerServiceImpl implements WelcomerService {
 
 	@Override
 	public String welcome() {
-		// TODO Auto-generated method stub
-		return null;
+		return fetchWelcomeMessageFromDataLayer();
 	}
 	
 	private String fetchWelcomeMessageFromDataLayer() {
