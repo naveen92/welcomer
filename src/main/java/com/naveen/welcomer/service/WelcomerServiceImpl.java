@@ -1,17 +1,17 @@
 package com.naveen.welcomer.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.naveen.welcomer.html.HTMLContentService;
+
 public class WelcomerServiceImpl implements WelcomerService {
+	
+	@Autowired
+	HTMLContentService htmlContentService;
 
 	@Override
 	public String welcome() {
-		return fetchWelcomeMessageFromDataLayer();
+		return htmlContentService.welcomeMessageHTMLContent();
 	}
 	
-	private String fetchWelcomeMessageFromDataLayer() {
-		return "<html><head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><title>Welcomer App</title></head>"
-        		+ "<body><br />"
-        		+ "<br /><p>Welcome user! You are now logged in! This is your home page!!</p> <br />"
-				+ "Click <a href=\"/logout\">here</a> to logout.<br /></body></html>";
-	}
-
 }
