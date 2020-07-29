@@ -1,33 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
  
 <suite name="Welcome Test Suite">
-   <test name="Welcome message test">
+   <test name="Welcome message service test">
     <classes>
       <class name="com.naveen.tests.WelcomeMessageTest" />
-    </classes>
-  </test>
-  
-   <test name="Login Endpoint test">
-    <classes>
-      <class name="com.naveen.tests.LoginEndpointTest" />
-    </classes>
-  </test>
-  
-   <test name="Login Page If Incorrect Credentials test">
-    <classes>
-      <class name="com.naveen.tests.LoginPageIfIncorrectCredTest" />
-    </classes>
-  </test>
-  
-   <test name="Login Page If Unauthenticated test">
-    <classes>
-      <class name="com.naveen.tests.LoginPageIfUnauthTest" />
-    </classes>
-  </test>
-  
-   <test name="Logout Endpoint test">
-    <classes>
-      <class name="com.naveen.tests.LogoutEndpointTest" />
     </classes>
   </test>
   

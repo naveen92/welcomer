@@ -12,7 +12,7 @@ import com.naveen.welcomer.html.HTMLContentService;
 import com.naveen.welcomer.html.HTMLContentServiceImpl;
 import com.naveen.welcomer.service.WelcomerServiceImpl;
 
-public class WelcomeMessageTest {
+public class WelcomeServiceTest {
 	@Mock private HTMLContentService htmlContentService = null;
 	@InjectMocks private WelcomerServiceImpl welcomerService = null;
 	
@@ -31,6 +31,12 @@ public class WelcomeMessageTest {
 		Mockito.when(htmlContentService.welcomeMessageHTMLContent()).thenReturn(expectedMessage);
 		String actualMessage = welcomerService.welcome();
 		Assert.assertEquals(actualMessage, expectedMessage);
+	}
+
+	@Test
+	public void whenUserIsUnauthenticatedThenLogin() {
+		String actualMessage = welcomerService.welcome();
+		Assert.assertTrue(actualMessage.contains("form"));
 	}
 
 }
