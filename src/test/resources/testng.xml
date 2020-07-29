@@ -13,4 +13,10 @@
     </classes>
   </test>
     
+   <test name="Index Controller test">
+    <classes>
+      <class name="com.naveen.tests.IndexControllerTest" />
+    </classes>
+  </test>
+    
 </suite>
