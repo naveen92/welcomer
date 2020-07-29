@@ -3,6 +3,7 @@ package com.naveen.welcomer.controller;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.naveen.welcomer.html.HTMLContentService;
+import com.naveen.welcomer.service.SecurityService;
 import com.naveen.welcomer.service.WelcomerService;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +20,9 @@ public class IndexController {
 	
 	@Autowired
 	HTMLContentService htmlContentService;
+	
+	@Autowired
+	SecurityService securityService;
 	
     @RequestMapping("/about")
     public String about() {
